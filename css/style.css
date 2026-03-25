@@ -362,6 +362,58 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* Contact Section */
+.contact-item {
+    display: block;
+    padding: 2rem 1.5rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-color: var(--primary);
+    box-shadow: 0 15px 30px rgba(13, 110, 253, 0.08);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.contact-item h5 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.contact-item p {
+    color: #64748b;
+    margin: 0;
+    font-size: 0.95rem;
+    line-break: anywhere;
+}
+
 /* Buttons */
 .btn-primary {
     background: var(--primary);
@@ -396,4 +448,4 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     padding: 12px 32px;
     font-weight: 600;
     border-radius: 12px;
-}
+}
